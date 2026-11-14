@@ -1,0 +1,7 @@
+*.mp4
+*.pt
+*.pth
+*.safetensors
+__pycache__/
+.DS_Store
+logs/

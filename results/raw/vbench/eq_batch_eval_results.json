@@ -1,0 +1,87 @@
+{
+    "subject_consistency": [
+        0.9772550939271848,
+        [
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 0.9434257369488478
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 0.9930913962423802
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 0.9952481485903263
+            }
+        ]
+    ],
+    "motion_smoothness": [
+        0.9828633613891157,
+        [
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 0.9789033583635778
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 0.9920733028237337
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 0.977613422980036
+            }
+        ]
+    ],
+    "dynamic_degree": [
+        0.6666666666666666,
+        [
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": true
+            }
+        ]
+    ],
+    "imaging_quality": [
+        0.7398871593710816,
+        [
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 78.10477249710648
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 65.65609797724971
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 78.20527733696832
+            }
+        ]
+    ],
+    "aesthetic_quality": [
+        0.581854522228241,
+        [
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 0.5505942702293396
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 0.5972813367843628
+            },
+            {
+                "video_path": "eval_sets/eq_batch/m2_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 0.5976879596710205
+            }
+        ]
+    ]
+}
