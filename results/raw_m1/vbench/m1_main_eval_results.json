@@ -1,0 +1,2627 @@
+{
+    "subject_consistency": [
+        0.9470427736525352,
+        [
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_04_20261027.mp4",
+                "video_results": 0.9485754016786814
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_06_20261027.mp4",
+                "video_results": 0.930599358305335
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_057_20261027.mp4",
+                "video_results": 0.98397380374372
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_033_20261027.mp4",
+                "video_results": 0.9350454811006784
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_091_20261027.mp4",
+                "video_results": 0.9812323700636625
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_06_20261027.mp4",
+                "video_results": 0.9893465481698513
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_002_20261027.mp4",
+                "video_results": 0.9546950649470091
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_095_20261027.mp4",
+                "video_results": 0.9629029124975205
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_07_20261027.mp4",
+                "video_results": 0.9998095195740462
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_01_20261027.mp4",
+                "video_results": 0.9534228261560201
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_018_20261027.mp4",
+                "video_results": 0.9894325226545334
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_065_20261027.mp4",
+                "video_results": 0.9263016249984503
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_03_20261027.mp4",
+                "video_results": 0.9437639240175486
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_02_20261027.mp4",
+                "video_results": 0.9453784737735986
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_069_20261027.mp4",
+                "video_results": 0.99608790948987
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_070_20261027.mp4",
+                "video_results": 0.9691855411976575
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_003_20261027.mp4",
+                "video_results": 0.9403607845306396
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_021_20261027.mp4",
+                "video_results": 0.9090030670166016
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_010_20261027.mp4",
+                "video_results": 0.9677993956953287
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_092_20261027.mp4",
+                "video_results": 0.96529355160892
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_10_20261027.mp4",
+                "video_results": 0.8787710428237915
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_015_20261027.mp4",
+                "video_results": 0.9183175325393677
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_006_20261027.mp4",
+                "video_results": 0.9365448296070099
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_019_20261027.mp4",
+                "video_results": 0.9841418024152517
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_09_20261027.mp4",
+                "video_results": 0.9355113931000233
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_096_20261027.mp4",
+                "video_results": 0.9600942853838206
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_030_20261027.mp4",
+                "video_results": 0.9825402032583952
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_02_20261027.mp4",
+                "video_results": 0.973365992680192
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_016_20261027.mp4",
+                "video_results": 0.9551401887089014
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_011_20261027.mp4",
+                "video_results": 0.9269894950091839
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_073_20261027.mp4",
+                "video_results": 0.9976817082613707
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_036_20261027.mp4",
+                "video_results": 0.9555200465023518
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_053_20261027.mp4",
+                "video_results": 0.9808583948761225
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_008_20261027.mp4",
+                "video_results": 0.9695361364632845
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_024_20261027.mp4",
+                "video_results": 0.7433675931766629
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_027_20261027.mp4",
+                "video_results": 0.9010404858738184
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_062_20261027.mp4",
+                "video_results": 0.9675522785633802
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_067_20261027.mp4",
+                "video_results": 0.9787202186882495
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_071_20261027.mp4",
+                "video_results": 0.8910683393478394
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_048_20261027.mp4",
+                "video_results": 0.9547963839024305
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_052_20261027.mp4",
+                "video_results": 0.8274321760982275
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 0.9957479041069746
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 0.9918994147330522
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_098_20261027.mp4",
+                "video_results": 0.9833861671388149
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_044_20261027.mp4",
+                "video_results": 0.989773477613926
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_014_20261027.mp4",
+                "video_results": 0.9675995226949453
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_04_20261027.mp4",
+                "video_results": 0.9411219358444214
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_022_20261027.mp4",
+                "video_results": 0.950097632408142
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_001_20261027.mp4",
+                "video_results": 0.8335924796760082
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_099_20261027.mp4",
+                "video_results": 0.8504905939102173
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_042_20261027.mp4",
+                "video_results": 0.9891647472977638
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_007_20261027.mp4",
+                "video_results": 0.9783611170947552
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_066_20261027.mp4",
+                "video_results": 0.9336173750460148
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_07_20261027.mp4",
+                "video_results": 0.9847819581627846
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_037_20261027.mp4",
+                "video_results": 0.8411263592541218
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_034_20261027.mp4",
+                "video_results": 0.962446554005146
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_063_20261027.mp4",
+                "video_results": 0.9966400131583214
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_04_20261027.mp4",
+                "video_results": 0.977735048905015
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_076_20261027.mp4",
+                "video_results": 0.9635968752205372
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_08_20261027.mp4",
+                "video_results": 0.9111578490585088
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_08_20261027.mp4",
+                "video_results": 0.7013467909768224
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_089_20261027.mp4",
+                "video_results": 0.9763785645365715
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_09_20261027.mp4",
+                "video_results": 0.965366542339325
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_061_20261027.mp4",
+                "video_results": 0.964275873824954
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_078_20261027.mp4",
+                "video_results": 0.9633371081203222
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_083_20261027.mp4",
+                "video_results": 0.9666521962732076
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_090_20261027.mp4",
+                "video_results": 0.9871114179491997
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_039_20261027.mp4",
+                "video_results": 0.9500889454036952
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_005_20261027.mp4",
+                "video_results": 0.9246760733425617
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_025_20261027.mp4",
+                "video_results": 0.9388431217521429
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_082_20261027.mp4",
+                "video_results": 0.9396849844604731
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 0.8719790294766426
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_093_20261027.mp4",
+                "video_results": 0.9876457054167986
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_026_20261027.mp4",
+                "video_results": 0.9895175632089377
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_020_20261027.mp4",
+                "video_results": 0.9660902425646782
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_046_20261027.mp4",
+                "video_results": 0.9744771759957075
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_081_20261027.mp4",
+                "video_results": 0.9397546131163835
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_085_20261027.mp4",
+                "video_results": 0.9741277020424605
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_060_20261027.mp4",
+                "video_results": 0.9266985073685646
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_051_20261027.mp4",
+                "video_results": 0.9724604535847903
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_10_20261027.mp4",
+                "video_results": 0.9339657679200173
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_03_20261027.mp4",
+                "video_results": 0.9872948247939348
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_086_20261027.mp4",
+                "video_results": 0.9990585826337337
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_074_20261027.mp4",
+                "video_results": 0.861114389449358
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_023_20261027.mp4",
+                "video_results": 0.8981486435979604
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_072_20261027.mp4",
+                "video_results": 0.9735937558114529
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_087_20261027.mp4",
+                "video_results": 0.9796916857361794
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_040_20261027.mp4",
+                "video_results": 0.918195516616106
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_056_20261027.mp4",
+                "video_results": 0.8939011607319116
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_038_20261027.mp4",
+                "video_results": 0.9491465594619513
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_075_20261027.mp4",
+                "video_results": 0.9206681720912456
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_05_20261027.mp4",
+                "video_results": 0.8116060510277748
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_017_20261027.mp4",
+                "video_results": 0.9628213334828615
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_079_20261027.mp4",
+                "video_results": 0.9060103304684162
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_029_20261027.mp4",
+                "video_results": 0.9853144392371178
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_054_20261027.mp4",
+                "video_results": 0.9613574393093586
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_059_20261027.mp4",
+                "video_results": 0.9708394046872855
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_032_20261027.mp4",
+                "video_results": 0.951429846137762
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_097_20261027.mp4",
+                "video_results": 0.9764190010726452
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_100_20261027.mp4",
+                "video_results": 0.9735638812184334
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_080_20261027.mp4",
+                "video_results": 0.9702370516955853
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_05_20261027.mp4",
+                "video_results": 0.962310879305005
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_077_20261027.mp4",
+                "video_results": 0.9495676346123219
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_047_20261027.mp4",
+                "video_results": 0.9062695223838091
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_09_20261027.mp4",
+                "video_results": 0.9470712516456843
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_05_20261027.mp4",
+                "video_results": 0.9281507853418589
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_058_20261027.mp4",
+                "video_results": 0.9830996800214052
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_10_20261027.mp4",
+                "video_results": 0.9436365600675345
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_035_20261027.mp4",
+                "video_results": 0.9695210054516792
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_049_20261027.mp4",
+                "video_results": 0.9838813453912735
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_084_20261027.mp4",
+                "video_results": 0.9132918987423182
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_045_20261027.mp4",
+                "video_results": 0.9395306084305048
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_08_20261027.mp4",
+                "video_results": 0.9149540401995182
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_050_20261027.mp4",
+                "video_results": 0.9993291102349758
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_012_20261027.mp4",
+                "video_results": 0.9626012966036797
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_013_20261027.mp4",
+                "video_results": 0.9743637628853321
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_07_20261027.mp4",
+                "video_results": 0.9299185644835234
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_043_20261027.mp4",
+                "video_results": 0.9857290562242269
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_055_20261027.mp4",
+                "video_results": 0.9571588318794966
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_004_20261027.mp4",
+                "video_results": 0.9815453987568616
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_068_20261027.mp4",
+                "video_results": 0.9243887756019831
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_06_20261027.mp4",
+                "video_results": 0.9856319196522236
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_028_20261027.mp4",
+                "video_results": 0.9869602907449007
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_031_20261027.mp4",
+                "video_results": 0.9844876185059548
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_041_20261027.mp4",
+                "video_results": 0.9389924235641957
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_009_20261027.mp4",
+                "video_results": 0.8234219022095204
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_064_20261027.mp4",
+                "video_results": 0.9808651432394981
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_01_20261027.mp4",
+                "video_results": 0.9860589064657688
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_094_20261027.mp4",
+                "video_results": 0.9394948072731495
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_088_20261027.mp4",
+                "video_results": 0.9148994721472263
+            }
+        ]
+    ],
+    "motion_smoothness": [
+        0.977857001065959,
+        [
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_04_20261027.mp4",
+                "video_results": 0.9889650631369669
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_06_20261027.mp4",
+                "video_results": 0.973905483659476
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_057_20261027.mp4",
+                "video_results": 0.9894062153039636
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_033_20261027.mp4",
+                "video_results": 0.9634931186466975
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_091_20261027.mp4",
+                "video_results": 0.9905926897251288
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_06_20261027.mp4",
+                "video_results": 0.9855260307014099
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_002_20261027.mp4",
+                "video_results": 0.968981322321597
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_095_20261027.mp4",
+                "video_results": 0.9923938597507647
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_07_20261027.mp4",
+                "video_results": 0.9974922489545364
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_01_20261027.mp4",
+                "video_results": 0.9932513113301543
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_018_20261027.mp4",
+                "video_results": 0.980743833352318
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_065_20261027.mp4",
+                "video_results": 0.9922257208756232
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_03_20261027.mp4",
+                "video_results": 0.9883186146854575
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_02_20261027.mp4",
+                "video_results": 0.9839342802241756
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_069_20261027.mp4",
+                "video_results": 0.9963083535781433
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_070_20261027.mp4",
+                "video_results": 0.9783178843502545
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_003_20261027.mp4",
+                "video_results": 0.9839021589772393
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_021_20261027.mp4",
+                "video_results": 0.9857148822102292
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_010_20261027.mp4",
+                "video_results": 0.9754991415185866
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_092_20261027.mp4",
+                "video_results": 0.9895282411826243
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_10_20261027.mp4",
+                "video_results": 0.9819834750306372
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_015_20261027.mp4",
+                "video_results": 0.9278090153395759
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_006_20261027.mp4",
+                "video_results": 0.9783274888514434
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_019_20261027.mp4",
+                "video_results": 0.9783136621535634
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_09_20261027.mp4",
+                "video_results": 0.9943949266538881
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_096_20261027.mp4",
+                "video_results": 0.9864897886454929
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_030_20261027.mp4",
+                "video_results": 0.9846815341638124
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_02_20261027.mp4",
+                "video_results": 0.9797732024016204
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_016_20261027.mp4",
+                "video_results": 0.9673912438823686
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_011_20261027.mp4",
+                "video_results": 0.9759430085686117
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_073_20261027.mp4",
+                "video_results": 0.9956151981241883
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_036_20261027.mp4",
+                "video_results": 0.9608773350268927
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_053_20261027.mp4",
+                "video_results": 0.9814763281380928
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_008_20261027.mp4",
+                "video_results": 0.9928304682917505
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_024_20261027.mp4",
+                "video_results": 0.930657466816187
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_027_20261027.mp4",
+                "video_results": 0.9678377749169914
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_062_20261027.mp4",
+                "video_results": 0.9796632831484623
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_067_20261027.mp4",
+                "video_results": 0.9722784430579123
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_071_20261027.mp4",
+                "video_results": 0.9727305439520226
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_048_20261027.mp4",
+                "video_results": 0.9754655456900976
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_052_20261027.mp4",
+                "video_results": 0.9749559583732665
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 0.9759199889758253
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 0.9933720788228486
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_098_20261027.mp4",
+                "video_results": 0.9934665096507354
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_044_20261027.mp4",
+                "video_results": 0.9933518238658979
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_014_20261027.mp4",
+                "video_results": 0.9625959177658109
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_04_20261027.mp4",
+                "video_results": 0.9908624763674166
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_022_20261027.mp4",
+                "video_results": 0.9794359683827457
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_001_20261027.mp4",
+                "video_results": 0.9723376102744784
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_099_20261027.mp4",
+                "video_results": 0.9456047345687741
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_042_20261027.mp4",
+                "video_results": 0.9965728944906622
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_007_20261027.mp4",
+                "video_results": 0.9766605168760213
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_066_20261027.mp4",
+                "video_results": 0.9884224699060982
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_07_20261027.mp4",
+                "video_results": 0.996803311360268
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_037_20261027.mp4",
+                "video_results": 0.9338345045700572
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_034_20261027.mp4",
+                "video_results": 0.9784426544071823
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_063_20261027.mp4",
+                "video_results": 0.9913527276812836
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_04_20261027.mp4",
+                "video_results": 0.9574537766963088
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_076_20261027.mp4",
+                "video_results": 0.9859945379109843
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_08_20261027.mp4",
+                "video_results": 0.99154866732851
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_08_20261027.mp4",
+                "video_results": 0.9702424306995768
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_089_20261027.mp4",
+                "video_results": 0.9931582864282198
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_09_20261027.mp4",
+                "video_results": 0.9831229740460554
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_061_20261027.mp4",
+                "video_results": 0.9786225566298234
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_078_20261027.mp4",
+                "video_results": 0.993201558032067
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_083_20261027.mp4",
+                "video_results": 0.9971631829882059
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_090_20261027.mp4",
+                "video_results": 0.9880396875196392
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_039_20261027.mp4",
+                "video_results": 0.9238539945775986
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_005_20261027.mp4",
+                "video_results": 0.9544385412084171
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_025_20261027.mp4",
+                "video_results": 0.9534210721631735
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_082_20261027.mp4",
+                "video_results": 0.9845125260874916
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 0.9730575279106701
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_093_20261027.mp4",
+                "video_results": 0.9886791249986907
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_026_20261027.mp4",
+                "video_results": 0.99147926592679
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_020_20261027.mp4",
+                "video_results": 0.9745687211466452
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_046_20261027.mp4",
+                "video_results": 0.9790479194816281
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_081_20261027.mp4",
+                "video_results": 0.9762282921465194
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_085_20261027.mp4",
+                "video_results": 0.9884030798951525
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_060_20261027.mp4",
+                "video_results": 0.98280785834132
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_051_20261027.mp4",
+                "video_results": 0.9484240129795909
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_10_20261027.mp4",
+                "video_results": 0.9547818679822356
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_03_20261027.mp4",
+                "video_results": 0.9943892565523138
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_086_20261027.mp4",
+                "video_results": 0.9968487845258296
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_074_20261027.mp4",
+                "video_results": 0.9658937341412928
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_023_20261027.mp4",
+                "video_results": 0.9500810980575457
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_072_20261027.mp4",
+                "video_results": 0.9786078600761218
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_087_20261027.mp4",
+                "video_results": 0.9778949609407732
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_040_20261027.mp4",
+                "video_results": 0.974597234660424
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_056_20261027.mp4",
+                "video_results": 0.9553491035002409
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_038_20261027.mp4",
+                "video_results": 0.9853389533547794
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_075_20261027.mp4",
+                "video_results": 0.9866940158992951
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_05_20261027.mp4",
+                "video_results": 0.9649403161889089
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_017_20261027.mp4",
+                "video_results": 0.9889962973437239
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_079_20261027.mp4",
+                "video_results": 0.9722696436847976
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_029_20261027.mp4",
+                "video_results": 0.9709073505353664
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_054_20261027.mp4",
+                "video_results": 0.9792992672262548
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_059_20261027.mp4",
+                "video_results": 0.9668527720332925
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_032_20261027.mp4",
+                "video_results": 0.9637995434034324
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_097_20261027.mp4",
+                "video_results": 0.9761806032626058
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_100_20261027.mp4",
+                "video_results": 0.9840678579190758
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_080_20261027.mp4",
+                "video_results": 0.9785204020059546
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_05_20261027.mp4",
+                "video_results": 0.9936699552617522
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_077_20261027.mp4",
+                "video_results": 0.9888144566437018
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_047_20261027.mp4",
+                "video_results": 0.9487485831906214
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_09_20261027.mp4",
+                "video_results": 0.9856113259974129
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_05_20261027.mp4",
+                "video_results": 0.9748595112474077
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_058_20261027.mp4",
+                "video_results": 0.9713119046029202
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_10_20261027.mp4",
+                "video_results": 0.970646194695827
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_035_20261027.mp4",
+                "video_results": 0.9719062548279862
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_049_20261027.mp4",
+                "video_results": 0.9742833918256139
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_084_20261027.mp4",
+                "video_results": 0.9677685992031695
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_045_20261027.mp4",
+                "video_results": 0.9509310448187688
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_08_20261027.mp4",
+                "video_results": 0.9855864410835113
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_050_20261027.mp4",
+                "video_results": 0.9904478803340246
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_012_20261027.mp4",
+                "video_results": 0.979495925506955
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_013_20261027.mp4",
+                "video_results": 0.9869873777619355
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_07_20261027.mp4",
+                "video_results": 0.9883585856651689
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_043_20261027.mp4",
+                "video_results": 0.9811340976444664
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_055_20261027.mp4",
+                "video_results": 0.9834682564816124
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_004_20261027.mp4",
+                "video_results": 0.9838285849679749
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_068_20261027.mp4",
+                "video_results": 0.9848757925262119
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_06_20261027.mp4",
+                "video_results": 0.9921177174328598
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_028_20261027.mp4",
+                "video_results": 0.9889224723610063
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_031_20261027.mp4",
+                "video_results": 0.9759534257262601
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_041_20261027.mp4",
+                "video_results": 0.9936564316632102
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_009_20261027.mp4",
+                "video_results": 0.9665583381940517
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_064_20261027.mp4",
+                "video_results": 0.9926578596833364
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_01_20261027.mp4",
+                "video_results": 0.9650537191205275
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_094_20261027.mp4",
+                "video_results": 0.9757661637705295
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_088_20261027.mp4",
+                "video_results": 0.957176994220164
+            }
+        ]
+    ],
+    "dynamic_degree": [
+        0.8384615384615385,
+        [
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_04_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_06_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_057_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_033_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_091_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_06_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_002_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_095_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_07_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_01_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_018_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_065_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_03_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_02_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_069_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_070_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_003_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_021_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_010_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_092_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_10_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_015_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_006_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_019_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_09_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_096_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_030_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_02_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_016_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_011_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_073_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_036_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_053_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_008_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_024_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_027_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_062_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_067_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_071_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_048_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_052_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_098_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_044_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_014_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_04_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_022_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_001_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_099_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_042_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_007_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_066_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_07_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_037_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_034_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_063_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_04_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_076_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_08_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_08_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_089_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_09_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_061_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_078_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_083_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_090_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_039_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_005_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_025_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_082_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_093_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_026_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_020_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_046_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_081_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_085_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_060_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_051_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_10_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_03_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_086_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_074_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_023_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_072_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_087_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_040_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_056_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_038_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_075_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_05_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_017_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_079_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_029_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_054_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_059_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_032_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_097_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_100_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_080_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_05_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_077_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_047_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_09_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_05_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_058_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_10_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_035_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_049_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_084_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_045_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_08_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_050_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_012_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_013_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_07_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_043_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_055_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_004_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_068_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_06_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_028_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_031_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_041_20261027.mp4",
+                "video_results": false
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_009_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_064_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_01_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_094_20261027.mp4",
+                "video_results": true
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_088_20261027.mp4",
+                "video_results": true
+            }
+        ]
+    ],
+    "imaging_quality": [
+        0.6577606044164297,
+        [
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_04_20261027.mp4",
+                "video_results": 78.29216785195433
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_06_20261027.mp4",
+                "video_results": 54.3620221644272
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_057_20261027.mp4",
+                "video_results": 74.48866959560064
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_033_20261027.mp4",
+                "video_results": 53.556991106198154
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_091_20261027.mp4",
+                "video_results": 71.77956602308485
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_06_20261027.mp4",
+                "video_results": 67.59272582442672
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_002_20261027.mp4",
+                "video_results": 57.99876446194119
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_095_20261027.mp4",
+                "video_results": 56.51373220373083
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_07_20261027.mp4",
+                "video_results": 64.82901905201099
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_01_20261027.mp4",
+                "video_results": 62.168954354745374
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_018_20261027.mp4",
+                "video_results": 70.84070172721957
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_065_20261027.mp4",
+                "video_results": 76.00100943482953
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_03_20261027.mp4",
+                "video_results": 69.06627023955922
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_02_20261027.mp4",
+                "video_results": 67.5797637656883
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_069_20261027.mp4",
+                "video_results": 57.07704793671031
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_070_20261027.mp4",
+                "video_results": 34.09720797597626
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_003_20261027.mp4",
+                "video_results": 70.60122219132788
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_021_20261027.mp4",
+                "video_results": 75.14133255570023
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_010_20261027.mp4",
+                "video_results": 66.06482635309666
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_092_20261027.mp4",
+                "video_results": 62.75005962230541
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_10_20261027.mp4",
+                "video_results": 64.49643905074508
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_015_20261027.mp4",
+                "video_results": 54.35252163733965
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_006_20261027.mp4",
+                "video_results": 67.77025689019098
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_019_20261027.mp4",
+                "video_results": 62.27645798671393
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_09_20261027.mp4",
+                "video_results": 73.42327645384235
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_096_20261027.mp4",
+                "video_results": 54.79704628461673
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_030_20261027.mp4",
+                "video_results": 63.254090674129536
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_02_20261027.mp4",
+                "video_results": 77.482245080265
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_016_20261027.mp4",
+                "video_results": 56.090045081244575
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_011_20261027.mp4",
+                "video_results": 66.50766057143977
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_073_20261027.mp4",
+                "video_results": 76.82600157937885
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_036_20261027.mp4",
+                "video_results": 72.17883216010199
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_053_20261027.mp4",
+                "video_results": 69.50647754433714
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_008_20261027.mp4",
+                "video_results": 67.13760696222752
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_024_20261027.mp4",
+                "video_results": 36.331459257337784
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_027_20261027.mp4",
+                "video_results": 69.1736489755136
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_062_20261027.mp4",
+                "video_results": 56.27008047221619
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_067_20261027.mp4",
+                "video_results": 77.32673174069251
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_071_20261027.mp4",
+                "video_results": 75.90216262252243
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_048_20261027.mp4",
+                "video_results": 63.408110960030264
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_052_20261027.mp4",
+                "video_results": 70.60065526138118
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 71.13459250367718
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 63.04072438934703
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_098_20261027.mp4",
+                "video_results": 72.90467156304254
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_044_20261027.mp4",
+                "video_results": 75.92931478994863
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_014_20261027.mp4",
+                "video_results": 56.4505734855746
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_04_20261027.mp4",
+                "video_results": 68.48498878949954
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_022_20261027.mp4",
+                "video_results": 69.67055002848308
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_001_20261027.mp4",
+                "video_results": 68.68731275016879
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_099_20261027.mp4",
+                "video_results": 68.41031156940225
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_042_20261027.mp4",
+                "video_results": 69.98523344816985
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_007_20261027.mp4",
+                "video_results": 57.55362503616898
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_066_20261027.mp4",
+                "video_results": 38.244082109427744
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_07_20261027.mp4",
+                "video_results": 76.91708760202667
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_037_20261027.mp4",
+                "video_results": 48.464858914599006
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_034_20261027.mp4",
+                "video_results": 66.5300548694752
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_063_20261027.mp4",
+                "video_results": 77.06928940761236
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_04_20261027.mp4",
+                "video_results": 76.06373511420355
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_076_20261027.mp4",
+                "video_results": 62.92772952421212
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_08_20261027.mp4",
+                "video_results": 69.8163067382059
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_08_20261027.mp4",
+                "video_results": 54.55680004166968
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_089_20261027.mp4",
+                "video_results": 68.44682495682328
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_09_20261027.mp4",
+                "video_results": 58.726158142089844
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_061_20261027.mp4",
+                "video_results": 65.30790573873638
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_078_20261027.mp4",
+                "video_results": 74.51459851677035
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_083_20261027.mp4",
+                "video_results": 48.3464232550727
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_090_20261027.mp4",
+                "video_results": 69.74367052243079
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_039_20261027.mp4",
+                "video_results": 58.527379165461035
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_005_20261027.mp4",
+                "video_results": 70.19981313634801
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_025_20261027.mp4",
+                "video_results": 69.46545315966193
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_082_20261027.mp4",
+                "video_results": 67.26728029604311
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 73.79767693413629
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_093_20261027.mp4",
+                "video_results": 68.33529809080524
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_026_20261027.mp4",
+                "video_results": 75.79371482943311
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_020_20261027.mp4",
+                "video_results": 69.76862504747179
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_046_20261027.mp4",
+                "video_results": 67.99200090949918
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_081_20261027.mp4",
+                "video_results": 70.53975427886586
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_085_20261027.mp4",
+                "video_results": 70.42252618295176
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_060_20261027.mp4",
+                "video_results": 69.76288953239535
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_051_20261027.mp4",
+                "video_results": 65.41644762769158
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_10_20261027.mp4",
+                "video_results": 47.19855904284819
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_03_20261027.mp4",
+                "video_results": 73.01412897934148
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_086_20261027.mp4",
+                "video_results": 72.60327478102695
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_074_20261027.mp4",
+                "video_results": 46.763342139161665
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_023_20261027.mp4",
+                "video_results": 66.48276929502134
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_072_20261027.mp4",
+                "video_results": 59.72009055997118
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_087_20261027.mp4",
+                "video_results": 69.33716832855602
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_040_20261027.mp4",
+                "video_results": 67.885038399402
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_056_20261027.mp4",
+                "video_results": 52.425364600287544
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_038_20261027.mp4",
+                "video_results": 67.57516813866886
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_075_20261027.mp4",
+                "video_results": 68.80344828852901
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_05_20261027.mp4",
+                "video_results": 59.950942898974006
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_017_20261027.mp4",
+                "video_results": 76.7914025577498
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_079_20261027.mp4",
+                "video_results": 75.184841391481
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_029_20261027.mp4",
+                "video_results": 64.72612658842111
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_054_20261027.mp4",
+                "video_results": 65.70429531144507
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_059_20261027.mp4",
+                "video_results": 63.903460043447986
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_032_20261027.mp4",
+                "video_results": 47.236635278772425
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_097_20261027.mp4",
+                "video_results": 72.64606456992067
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_100_20261027.mp4",
+                "video_results": 47.361264169952015
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_080_20261027.mp4",
+                "video_results": 75.66862111032745
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_05_20261027.mp4",
+                "video_results": 74.19834824550298
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_077_20261027.mp4",
+                "video_results": 74.78543590027608
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_047_20261027.mp4",
+                "video_results": 53.11045192200461
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_09_20261027.mp4",
+                "video_results": 75.71383610478154
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_05_20261027.mp4",
+                "video_results": 77.73645217330368
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_058_20261027.mp4",
+                "video_results": 65.01888096185378
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_10_20261027.mp4",
+                "video_results": 52.85606257120768
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_035_20261027.mp4",
+                "video_results": 73.56508919044778
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_049_20261027.mp4",
+                "video_results": 65.11360111942997
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_084_20261027.mp4",
+                "video_results": 74.4700143131209
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_045_20261027.mp4",
+                "video_results": 69.78641288663134
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_08_20261027.mp4",
+                "video_results": 73.20855458577473
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_050_20261027.mp4",
+                "video_results": 63.33929664706007
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_012_20261027.mp4",
+                "video_results": 76.50745815700955
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_013_20261027.mp4",
+                "video_results": 63.90514920081621
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_07_20261027.mp4",
+                "video_results": 66.7178232640396
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_043_20261027.mp4",
+                "video_results": 74.07375128475236
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_055_20261027.mp4",
+                "video_results": 66.18192828143084
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_004_20261027.mp4",
+                "video_results": 69.67168092138974
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_068_20261027.mp4",
+                "video_results": 50.24582968817817
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_06_20261027.mp4",
+                "video_results": 71.64268380624277
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_028_20261027.mp4",
+                "video_results": 66.02366624055085
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_031_20261027.mp4",
+                "video_results": 69.31417526433498
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_041_20261027.mp4",
+                "video_results": 78.83134460449219
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_009_20261027.mp4",
+                "video_results": 58.99263358410494
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_064_20261027.mp4",
+                "video_results": 54.84848535796743
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_01_20261027.mp4",
+                "video_results": 56.35734219021268
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_094_20261027.mp4",
+                "video_results": 64.85279624844775
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_088_20261027.mp4",
+                "video_results": 67.70652154051227
+            }
+        ]
+    ],
+    "aesthetic_quality": [
+        0.5626752329560426,
+        [
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_04_20261027.mp4",
+                "video_results": 0.47595101594924927
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_06_20261027.mp4",
+                "video_results": 0.6141142249107361
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_057_20261027.mp4",
+                "video_results": 0.5262686014175415
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_033_20261027.mp4",
+                "video_results": 0.5371799468994141
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_091_20261027.mp4",
+                "video_results": 0.6348411440849304
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_06_20261027.mp4",
+                "video_results": 0.6150703430175781
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_002_20261027.mp4",
+                "video_results": 0.3310856223106384
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_095_20261027.mp4",
+                "video_results": 0.5051526427268982
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_07_20261027.mp4",
+                "video_results": 0.6599786877632141
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_01_20261027.mp4",
+                "video_results": 0.4585833251476288
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_018_20261027.mp4",
+                "video_results": 0.6618534326553345
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_065_20261027.mp4",
+                "video_results": 0.2930107116699219
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_03_20261027.mp4",
+                "video_results": 0.44835183024406433
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_02_20261027.mp4",
+                "video_results": 0.5818280577659607
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_069_20261027.mp4",
+                "video_results": 0.5750178098678589
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_070_20261027.mp4",
+                "video_results": 0.6015623807907104
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_003_20261027.mp4",
+                "video_results": 0.529083788394928
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_021_20261027.mp4",
+                "video_results": 0.5051637887954712
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_010_20261027.mp4",
+                "video_results": 0.5737184882164001
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_092_20261027.mp4",
+                "video_results": 0.5982456207275391
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_10_20261027.mp4",
+                "video_results": 0.3152073621749878
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_015_20261027.mp4",
+                "video_results": 0.5314540863037109
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_006_20261027.mp4",
+                "video_results": 0.6574159860610962
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_019_20261027.mp4",
+                "video_results": 0.6783250570297241
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_09_20261027.mp4",
+                "video_results": 0.5402634143829346
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_096_20261027.mp4",
+                "video_results": 0.7655163407325745
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_030_20261027.mp4",
+                "video_results": 0.6685892939567566
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_02_20261027.mp4",
+                "video_results": 0.47928449511528015
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_016_20261027.mp4",
+                "video_results": 0.68715500831604
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_011_20261027.mp4",
+                "video_results": 0.45870116353034973
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_073_20261027.mp4",
+                "video_results": 0.7494984269142151
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_036_20261027.mp4",
+                "video_results": 0.5457999110221863
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_053_20261027.mp4",
+                "video_results": 0.6361615061759949
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_008_20261027.mp4",
+                "video_results": 0.48926404118537903
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_024_20261027.mp4",
+                "video_results": 0.5048245787620544
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_027_20261027.mp4",
+                "video_results": 0.5300788283348083
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_062_20261027.mp4",
+                "video_results": 0.5977513194084167
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_067_20261027.mp4",
+                "video_results": 0.7555588483810425
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_071_20261027.mp4",
+                "video_results": 0.6222532987594604
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_048_20261027.mp4",
+                "video_results": 0.5436204671859741
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_052_20261027.mp4",
+                "video_results": 0.5357605218887329
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_02_20261027.mp4",
+                "video_results": 0.6374370455741882
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_01_20261027.mp4",
+                "video_results": 0.6517125368118286
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_098_20261027.mp4",
+                "video_results": 0.541860818862915
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_044_20261027.mp4",
+                "video_results": 0.40372464060783386
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_014_20261027.mp4",
+                "video_results": 0.4979330003261566
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_04_20261027.mp4",
+                "video_results": 0.37100324034690857
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_022_20261027.mp4",
+                "video_results": 0.6530936360359192
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_001_20261027.mp4",
+                "video_results": 0.4788006842136383
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_099_20261027.mp4",
+                "video_results": 0.49153566360473633
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_042_20261027.mp4",
+                "video_results": 0.4626259505748749
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_007_20261027.mp4",
+                "video_results": 0.6526845097541809
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_066_20261027.mp4",
+                "video_results": 0.5228093862533569
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_07_20261027.mp4",
+                "video_results": 0.60133296251297
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_037_20261027.mp4",
+                "video_results": 0.6238735318183899
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_034_20261027.mp4",
+                "video_results": 0.5785768032073975
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_063_20261027.mp4",
+                "video_results": 0.5704476833343506
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_04_20261027.mp4",
+                "video_results": 0.6514217853546143
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_076_20261027.mp4",
+                "video_results": 0.6196947693824768
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_08_20261027.mp4",
+                "video_results": 0.569936215877533
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_08_20261027.mp4",
+                "video_results": 0.3645627498626709
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_089_20261027.mp4",
+                "video_results": 0.5802175998687744
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_09_20261027.mp4",
+                "video_results": 0.6242220401763916
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_061_20261027.mp4",
+                "video_results": 0.7998447418212891
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_078_20261027.mp4",
+                "video_results": 0.6872750520706177
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_083_20261027.mp4",
+                "video_results": 0.3606719970703125
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_090_20261027.mp4",
+                "video_results": 0.5888246297836304
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_039_20261027.mp4",
+                "video_results": 0.5536573529243469
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_005_20261027.mp4",
+                "video_results": 0.45387744903564453
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_025_20261027.mp4",
+                "video_results": 0.5315109491348267
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_082_20261027.mp4",
+                "video_results": 0.5569295883178711
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_03_20261027.mp4",
+                "video_results": 0.42446738481521606
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_093_20261027.mp4",
+                "video_results": 0.5419102311134338
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_026_20261027.mp4",
+                "video_results": 0.407979816198349
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_020_20261027.mp4",
+                "video_results": 0.5434941649436951
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_046_20261027.mp4",
+                "video_results": 0.5082945823669434
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_081_20261027.mp4",
+                "video_results": 0.715066134929657
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_085_20261027.mp4",
+                "video_results": 0.6087701320648193
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_060_20261027.mp4",
+                "video_results": 0.5163365006446838
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_051_20261027.mp4",
+                "video_results": 0.5177013278007507
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_10_20261027.mp4",
+                "video_results": 0.5756403803825378
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_03_20261027.mp4",
+                "video_results": 0.6610985398292542
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_086_20261027.mp4",
+                "video_results": 0.49000149965286255
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_074_20261027.mp4",
+                "video_results": 0.6026768684387207
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_023_20261027.mp4",
+                "video_results": 0.534963846206665
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_072_20261027.mp4",
+                "video_results": 0.6026684045791626
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_087_20261027.mp4",
+                "video_results": 0.6959227919578552
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_040_20261027.mp4",
+                "video_results": 0.5967010855674744
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_056_20261027.mp4",
+                "video_results": 0.5842103362083435
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_038_20261027.mp4",
+                "video_results": 0.548945963382721
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_075_20261027.mp4",
+                "video_results": 0.5609889030456543
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_05_20261027.mp4",
+                "video_results": 0.49420976638793945
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_017_20261027.mp4",
+                "video_results": 0.6844531297683716
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_079_20261027.mp4",
+                "video_results": 0.5940674543380737
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_029_20261027.mp4",
+                "video_results": 0.5733575820922852
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_054_20261027.mp4",
+                "video_results": 0.6550312042236328
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_059_20261027.mp4",
+                "video_results": 0.6870614290237427
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_032_20261027.mp4",
+                "video_results": 0.5363901853561401
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_097_20261027.mp4",
+                "video_results": 0.691857635974884
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_100_20261027.mp4",
+                "video_results": 0.6159286499023438
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_080_20261027.mp4",
+                "video_results": 0.7593711018562317
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_05_20261027.mp4",
+                "video_results": 0.610435426235199
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_077_20261027.mp4",
+                "video_results": 0.5707290768623352
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_047_20261027.mp4",
+                "video_results": 0.6052838563919067
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_09_20261027.mp4",
+                "video_results": 0.6026417016983032
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_05_20261027.mp4",
+                "video_results": 0.6907002925872803
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_058_20261027.mp4",
+                "video_results": 0.559203565120697
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_10_20261027.mp4",
+                "video_results": 0.451595276594162
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_035_20261027.mp4",
+                "video_results": 0.551327109336853
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_049_20261027.mp4",
+                "video_results": 0.5950878858566284
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_084_20261027.mp4",
+                "video_results": 0.5923507213592529
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_045_20261027.mp4",
+                "video_results": 0.6695422530174255
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_multiple_objects_08_20261027.mp4",
+                "video_results": 0.5333961248397827
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_050_20261027.mp4",
+                "video_results": 0.683515191078186
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_012_20261027.mp4",
+                "video_results": 0.6051535606384277
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_013_20261027.mp4",
+                "video_results": 0.5885335803031921
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_07_20261027.mp4",
+                "video_results": 0.5005418062210083
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_043_20261027.mp4",
+                "video_results": 0.5620684623718262
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_055_20261027.mp4",
+                "video_results": 0.6619965434074402
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_004_20261027.mp4",
+                "video_results": 0.3780200779438019
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_068_20261027.mp4",
+                "video_results": 0.5037960410118103
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_camera_motion_06_20261027.mp4",
+                "video_results": 0.5636966228485107
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_028_20261027.mp4",
+                "video_results": 0.509401798248291
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_031_20261027.mp4",
+                "video_results": 0.6281498074531555
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_041_20261027.mp4",
+                "video_results": 0.20174460113048553
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_009_20261027.mp4",
+                "video_results": 0.3799137473106384
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_064_20261027.mp4",
+                "video_results": 0.5225411057472229
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__hard_large_motion_01_20261027.mp4",
+                "video_results": 0.5850071310997009
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_094_20261027.mp4",
+                "video_results": 0.6114405989646912
+            },
+            {
+                "video_path": "eval_sets/m1_main/m1_main__vb_088_20261027.mp4",
+                "video_results": 0.3997548520565033
+            }
+        ]
+    ]
+}

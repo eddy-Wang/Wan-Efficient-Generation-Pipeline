@@ -1,6 +1,6 @@
 # M2: Self Forcing (autoregressive streaming distillation)
 
-*Draft of the M2 part of the group report. All numbers come from our own runs on one NVIDIA L40S (48 GB); the full tables are in `RESULTS.md` and `results/tables/`, figures in `results/figures/`. Items marked [group] are filled from the shared evaluation of the other methods (the M1 timing and the cross-method table), which is not available from this part alone.*
+*Draft of the M2 part of the group report. All numbers come from our own runs on one NVIDIA L40S (48 GB); the full tables are in `RESULTS.md` and `results/tables/`, figures in `results/figures/`. M1 (the teacher) was measured with the same protocol; see `M1_report_section.md`.*
 
 ## 1. Method
 
@@ -34,7 +34,7 @@
 
 *Real-time factor = video seconds / generation seconds; above 1 means faster than playback. n=30 except the first row.
 
-- For the same architecture, one Wan2.1-1.3B video (832×480, 81 frames, 50 steps with CFG) took 238.75 s with the group's timing wrapper on the same GPU type, so the default Self Forcing setting is about 20× faster per video [group: replace with the formal M1 timing]. M1 runs 100 full-clip network evaluations per video (50 steps × 2 for CFG); M2 runs 35 evaluations, each on a 3-frame chunk with cached context (7 chunks × (4 denoising passes + 1 cache-refresh pass)).
+- For the same architecture, Wan2.1-1.3B (M1: 832×480, 81 frames, 50 steps with CFG) takes 232.94 s per video (sd 0.31, 130 videos, same timing scope and GPU type), so the default Self Forcing setting is **19.1× faster** per video. M1 runs 100 full-clip network evaluations per video (50 steps × 2 for CFG); M2 runs 35 evaluations, each on a 3-frame chunk with cached context (7 chunks × (4 denoising passes + 1 cache-refresh pass)).
 - Each denoising step costs about 1.4 s; the remaining 6.5 s is a fixed cost dominated by VAE decoding (about 5 s). **After distillation the VAE decoder, not the transformer, is the largest single cost: 42% of the time at 4 steps and 64% at 1 step.** Reducing steps further has sharply diminishing returns.
 - Per-chunk latency rises for the first seven chunks while the cache fills (about 0.7 s to 1.35 s) and then stays flat for the remaining twenty; a window of 12 frames caps it at about 1.02 s. Cost per new frame does not grow with video length, and memory stays at 21 to 24 GiB for a 20 s video.
 
@@ -105,9 +105,9 @@ Real time needs a steady chunk below 0.75 s. **No configuration reached it.** St
 
 ## 4. Discussion
 
-**Strengths.** Distillation plus a KV cache gives a model that is roughly 20× faster than its teacher per video (quality against M1 is in the group evaluation [group]); cost per frame is constant in video length; memory stays near 24 GiB for 20 s videos on one GPU.
+**Strengths.** Distillation plus a KV cache gives a model that is 19.1× faster than its teacher per video, with the same CLIP text alignment and higher VBench aesthetic (+0.044) and imaging (+0.035) quality over 130 paired prompts, although with less motion (dynamic degree 0.72 against 0.84); the teacher with 4, 8 or 16 steps cannot match it at comparable cost (see the M1 section); cost per frame is constant in video length; memory stays near 24 GiB for 20 s videos on one GPU.
 
-**Limitations.** (i) The transformer is no longer the bottleneck: VAE decoding takes 42% to 64% of the time. (ii) Drift is reduced by a sink but not removed (motion decay, brightness, geometry). (iii) The model is trained for 3-frame chunks and 21 frames and is brittle outside that (chunk 1). (iv) Guidance is baked in, so there is no CFG scale or negative prompt to adjust. (v) Real-time streaming was not reached on an L40S (best 0.76×), and the light VAE that gets closest costs fidelity. (vi) Aggressive step reduction (1 step) is clearly visible in VBench although CLIP does not show it.
+**Limitations.** (i) The transformer is no longer the bottleneck: VAE decoding takes 42% to 64% of the time. (ii) Drift is reduced by a sink but not removed (motion decay, brightness, geometry). (iii) The model is trained for 3-frame chunks and 21 frames and is brittle outside that (chunk 1). (iv) Guidance is baked in, so there is no CFG scale or negative prompt to adjust. (v) Real-time streaming was not reached on an L40S (best 0.76×), and the light VAE that gets closest costs fidelity. (vi) Aggressive step reduction (1 step) is clearly visible in VBench although CLIP does not show it. (vii) Videos move less than the teacher's (dynamic degree 0.72 against 0.84 over 130 prompts).
 
 **Future work.** Train with re-noised context instead of applying it at inference; periodic re-anchoring of the sink on long videos; FP8 or a faster GPU to close the remaining gap to real time; measure time to first frame in a real streaming client.
 

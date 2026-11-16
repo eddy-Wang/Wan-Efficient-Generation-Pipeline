@@ -15,7 +15,8 @@ T = os.path.join(OUT, "tables")
 D = os.path.join(OUT, "data")
 VD = ["subject_consistency", "motion_smoothness", "dynamic_degree", "imaging_quality", "aesthetic_quality"]
 SHORT = {"subject_consistency": "subject consistency", "motion_smoothness": "motion smoothness",
-         "dynamic_degree": "dynamic degree", "imaging_quality": "imaging quality", "aesthetic_quality": "aesthetic quality"}
+         "dynamic_degree": "dynamic degree", "imaging_quality": "imaging quality", "aesthetic_quality": "aesthetic quality",
+         "clip": "CLIP x100"}
 
 
 def md(df, fmt="{:.3f}"):
@@ -48,6 +49,13 @@ cdp = pd.read_csv(os.path.join(T, "m2_drift_paired.csv"))
 seedv = pd.read_csv(os.path.join(T, "m2_seed_variance.csv"))
 seede = pd.read_csv(os.path.join(T, "m2_seed_effects.csv"))
 vper = pd.read_csv(os.path.join(T, "m2_vbench_per_video.csv"))
+m1_main_p = os.path.join(T, "m1_vs_m2_main.csv")
+HAS_M1 = os.path.exists(m1_main_p)
+if HAS_M1:
+    m1main = pd.read_csv(m1_main_p)
+    m1pair = pd.read_csv(os.path.join(T, "m1_vs_m2_paired.csv"))
+    m1src = pd.read_csv(os.path.join(T, "m1_vs_m2_by_source.csv"))
+    m1bud = pd.read_csv(os.path.join(T, "m1_budget.csv"))
 stream_path = os.path.join(T, "m2_streaming.csv")
 stream = pd.read_csv(stream_path) if os.path.exists(stream_path) else None
 
@@ -164,11 +172,84 @@ if stream is not None:
 else:
     stream_md = "_not available_"
 
-doc = f"""# M2 (Self Forcing): results and alignment notes
+m1_section = m1_summary = ""
+if HAS_M1:
+    r1 = m1main[m1main.method.str.startswith("M1")].iloc[0]
+    rowm1 = {"method": "M1 Wan2.1-1.3B", "resolution": "832x480", "frames": 81, "fps": 16, "steps": 50, "CFG": "6.0 (Wan negative prompt)",
+             "offload": "no", "gen_s (mean, sd)": f"{r1.gen_s:.2f} ({r1.gen_s_sd:.2f})", "peak torch alloc (GiB)": f"{r1.peak_gib:.1f}"}
+    for d in VD:
+        rowm1[SHORT[d]] = f"{r1[d]:.4f}"
+    rowm1["CLIP x100"] = f"{r1['clip']:.2f}"
+    rows_ = [rowm1, row]
+    both_md = md(pd.DataFrame(rows_))
+    pr = m1pair.copy()
+    pr["M2 minus M1 [95% interval]"] = [ci(a_, b_, c_, 4) + sig(b_, c_) for a_, b_, c_ in zip(pr.diff_m2_minus_m1, pr.ci_lo, pr.ci_hi)]
+    pr = pr[["metric", "m1_mean", "m2_mean", "M2 minus M1 [95% interval]", "n"]]
+    pr["metric"] = [SHORT.get(m, m) if m != "gen_s" else "generation seconds" for m in pr.metric]
+    pair_md = md(pr, "{:.4f}")
+    src_md = md(m1src.rename(columns=SHORT), "{:.4f}")
+    bcols = ["method", "steps", "n", "gen_s"] + [c for c in ["aesthetic_quality", "imaging_quality", "dynamic_degree",
+                                                            "subject_consistency", "clip"] if c in m1bud.columns]
+    bud_md = md(m1bud[bcols].rename(columns=SHORT), "{:.3f}")
+    vcols = ["method", "steps"] + [c for c in m1bud.columns if c.endswith("_vs_m2_4steps")]
+    bud_vs_md = md(m1bud[vcols].rename(columns={c: SHORT.get(c.replace("_vs_m2_4steps", ""), c) for c in vcols}))
+    m1_summary = (f"\n- M1 (Wan2.1-1.3B, the teacher, measured the same way) takes {r1.gen_s:.1f} s per clip, so M2 is "
+                  f"{r1.gen_s / main.gen_s.mean():.1f}x faster with the same CLIP alignment, higher VBench aesthetic and imaging quality and "
+                  f"lower dynamic degree; the teacher with fewer steps does not reach M2's quality at M2's cost (section 4.7).")
+    m1_section = f"""### 4.7 M1 (Wan2.1-1.3B, the teacher) and M1 against M2
+
+M1 was generated with the same prompts, seed, GPU type, timing scope, memory scope and encoder as M2 (Wan2.1 code revision
+9737cba9c1c3c4d04b33fcad41c111989865d315, the revision in P1's example config; 50 UniPC steps, CFG 6.0, shift 8.0, Wan's default
+negative prompt, bf16, no offload), and scored with the same VBench and CLIP setup.
+
+The two rows for the group table:
+
+{both_md}
+
+Paired over the same 130 prompts (`*` = interval excludes 0):
+
+{pair_md}
+
+By prompt source:
+
+{src_md}
+
+Equal budget: the teacher run with fewer UniPC steps against the distilled student with fewer steps, on the 30-prompt subset
+(figure `fig_m1_vs_m2_budget.png`):
+
+{bud_md}
+
+Difference from M2 with 4 steps (its default) on the same prompts:
+
+{bud_vs_md}
+
+How to read this (interpretation, written by hand from the tables above):
+
+- **Speed.** M1 takes {r1.gen_s:.1f} s per 5 s clip (sd {r1.gen_s_sd:.2f} s over 130 videos), M2 {main.gen_s.mean():.2f} s: M2 is
+  **{r1.gen_s / main.gen_s.mean():.1f}x faster** at about the same peak memory ({r1.peak_gib:.1f} against {main.peak_gib.max():.1f} GiB).
+  M1 time is linear in steps: about 4.5 s per UniPC step (two network passes for CFG) plus about 9 s of fixed cost
+  (text encoding and VAE decoding); the 4/8/16/50-step times fit this within 0.1 s.
+- **Quality at full budget (130 prompts, paired).** Text alignment is the same (CLIP difference not significant). M2 scores
+  higher on aesthetic quality (+0.044) and imaging quality (+0.035) and slightly higher on subject consistency and motion
+  smoothness, but **M1 is clearly more dynamic** (dynamic degree 0.84 against 0.72, -0.12 for M2). Higher consistency and
+  smoothness go together with less motion, so those two gains should not be read as better temporal quality. Higher VBench
+  aesthetic and imaging scores for a DMD-distilled student than for its teacher are plausible (distribution matching tends to
+  favour sharp, high-contrast, mode-like samples), but VBench is not a human judgement and we ran no user study.
+- **Is distillation needed, or would fewer teacher steps do? It is needed.** M1 with 4 steps (26.8 s, still 2.2x slower than
+  M2 because of CFG and full-clip attention) scores far lower (and was a blur in the example we inspected): aesthetic -0.20, imaging -0.28, CLIP -3.1 against M2 with
+  4 steps. With 8 steps (44.7 s, 3.7x M2's time) M1 is still clearly worse on aesthetic and imaging quality; with 16 steps
+  (80.5 s, 6.6x) it gains CLIP (+1.4) but still loses aesthetic (-0.07) and imaging (-0.05) quality. No M1 setting we ran
+  matches M2 at M2's cost; even M2 at 2 steps (9.4 s) beats M1 at 16 steps on aesthetic and imaging quality (though not on
+  dynamic degree or CLIP).
+- **Caveats.** One seed. The 30-prompt subset slightly favours M1 on CLIP (+0.95, significant there) while all 130 prompts show
+  no difference, so subset-level CLIP differences of about one point are within prompt-selection noise (see 4.5).
+"""
+
+doc = f"""# M2 (Self Forcing) and M1 (Wan2.1-1.3B): results and alignment notes
 
 This document is for the group: it says exactly how M2 was run and measured so that M1, M3 and M4 can be reported the
-same way, and it gives all M2 results. Every table below is generated from the csv files in `results/` by
-`m2_self_forcing/code/build_docs.py`; nothing is typed by hand. Videos are not in this repository (see section 7).
+same way, and it gives all M2 and M1 results. Every table and number below is generated from the csv files in `results/` by
+`m2_self_forcing/code/build_docs.py`; only the interpretation bullets are written by hand. Videos are not in this repository (see section 7).
 
 ## 1. Summary
 
@@ -181,7 +262,7 @@ same way, and it gives all M2 results. Every table below is generated from the c
   imaging quality {vmain.loc['imaging_quality','mean']:.4f}, aesthetic quality {vmain.loc['aesthetic_quality','mean']:.4f}.
 - Fewer steps are much faster but VBench shows the cost that CLIP does not: 1 step loses aesthetic quality and dynamics clearly
   (section 4.2). A sink of 3 frames is the useful fix for drift in 20 s videos (section 4.3). Our re-noised-context idea did
-  **not** help (section 4.4).
+  **not** help (section 4.4).{m1_summary}
 
 ## 2. Protocol to align on
 
@@ -223,8 +304,7 @@ averages over different prompt mixes.
 
 `realtime_factor` = video seconds / generation seconds; above 1 means faster than playback. `vae_share_pct` = share of
 (denoising + VAE decoding) time spent in VAE decoding. n=130 for the first row and n=30 for all others.
-One Wan2.1-1.3B video with the same settings took 238.75 s in P1's smoke run (single video, same GPU type and timing scope);
-the formal M1 number should replace it.
+For comparison, M1 (Wan2.1-1.3B, 50 steps with CFG, same scope and GPU type) is in section 4.7.
 
 ### 4.2 Steps, chunk size, window and sink on 5 s clips (30 prompts, paired)
 
@@ -307,6 +387,8 @@ A-C were measured in one job and D-E in a second job on the same GPU type, four 
   of start-up buffering (the last chunk is ready at 6.69 s and is played from 4.5 s after start).
 - Not tested: FP8 quantisation, a TensorRT decoder, other GPUs. The authors' real-time claim refers to different hardware and
   options, so this result neither confirms nor refutes it.
+
+{m1_section}
 
 ## 5. How to read these numbers
 

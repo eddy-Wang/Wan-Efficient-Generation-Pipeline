@@ -1,8 +1,8 @@
-# M2 (Self Forcing): results and alignment notes
+# M2 (Self Forcing) and M1 (Wan2.1-1.3B): results and alignment notes
 
 This document is for the group: it says exactly how M2 was run and measured so that M1, M3 and M4 can be reported the
-same way, and it gives all M2 results. Every table below is generated from the csv files in `results/` by
-`m2_self_forcing/code/build_docs.py`; nothing is typed by hand. Videos are not in this repository (see section 7).
+same way, and it gives all M2 and M1 results. Every table and number below is generated from the csv files in `results/` by
+`m2_self_forcing/code/build_docs.py`; only the interpretation bullets are written by hand. Videos are not in this repository (see section 7).
 
 ## 1. Summary
 
@@ -16,6 +16,7 @@ same way, and it gives all M2 results. Every table below is generated from the c
 - Fewer steps are much faster but VBench shows the cost that CLIP does not: 1 step loses aesthetic quality and dynamics clearly
   (section 4.2). A sink of 3 frames is the useful fix for drift in 20 s videos (section 4.3). Our re-noised-context idea did
   **not** help (section 4.4).
+- M1 (Wan2.1-1.3B, the teacher, measured the same way) takes 232.9 s per clip, so M2 is 19.1x faster with the same CLIP alignment, higher VBench aesthetic and imaging quality and lower dynamic degree; the teacher with fewer steps does not reach M2's quality at M2's cost (section 4.7).
 
 ## 2. Protocol to align on
 
@@ -75,8 +76,7 @@ averages over different prompt mixes.
 
 `realtime_factor` = video seconds / generation seconds; above 1 means faster than playback. `vae_share_pct` = share of
 (denoising + VAE decoding) time spent in VAE decoding. n=130 for the first row and n=30 for all others.
-One Wan2.1-1.3B video with the same settings took 238.75 s in P1's smoke run (single video, same GPU type and timing scope);
-the formal M1 number should replace it.
+For comparison, M1 (Wan2.1-1.3B, 50 steps with CFG, same scope and GPU type) is in section 4.7.
 
 ### 4.2 Steps, chunk size, window and sink on 5 s clips (30 prompts, paired)
 
@@ -206,6 +206,89 @@ A-C were measured in one job and D-E in a second job on the same GPU type, four 
   of start-up buffering (the last chunk is ready at 6.69 s and is played from 4.5 s after start).
 - Not tested: FP8 quantisation, a TensorRT decoder, other GPUs. The authors' real-time claim refers to different hardware and
   options, so this result neither confirms nor refutes it.
+
+### 4.7 M1 (Wan2.1-1.3B, the teacher) and M1 against M2
+
+M1 was generated with the same prompts, seed, GPU type, timing scope, memory scope and encoder as M2 (Wan2.1 code revision
+9737cba9c1c3c4d04b33fcad41c111989865d315, the revision in P1's example config; 50 UniPC steps, CFG 6.0, shift 8.0, Wan's default
+negative prompt, bf16, no offload), and scored with the same VBench and CLIP setup.
+
+The two rows for the group table:
+
+| method | resolution | frames | fps | steps | CFG | offload | gen_s (mean, sd) | peak torch alloc (GiB) | subject consistency | motion smoothness | dynamic degree | imaging quality | aesthetic quality | CLIP x100 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| M1 Wan2.1-1.3B | 832x480 | 81 | 16 | 50 | 6.0 (Wan negative prompt) | no | 232.94 (0.31) | 24.4 | 0.9470 | 0.9779 | 0.8385 | 0.6578 | 0.5627 | 31.49 |
+| M2 Self Forcing | 832x480 | 81 | 16 | 4 | none (distilled) | no | 12.19 (0.03) | 23.3 | 0.9591 | 0.9850 | 0.7154 | 0.6931 | 0.6069 | 31.27 |
+
+Paired over the same 130 prompts (`*` = interval excludes 0):
+
+| metric | m1_mean | m2_mean | M2 minus M1 [95% interval] | n |
+|---|---|---|---|---|
+| CLIP x100 | 31.4935 | 31.2660 | -0.2275 [-0.7286, +0.2820] | 130 |
+| subject consistency | 0.9470 | 0.9591 | +0.0121 [+0.0045, +0.0195]* | 130 |
+| motion smoothness | 0.9779 | 0.9850 | +0.0072 [+0.0052, +0.0091]* | 130 |
+| dynamic degree | 0.8385 | 0.7154 | -0.1231 [-0.2000, -0.0462]* | 130 |
+| imaging quality | 0.6578 | 0.6931 | +0.0353 [+0.0211, +0.0499]* | 130 |
+| aesthetic quality | 0.5627 | 0.6069 | +0.0443 [+0.0303, +0.0585]* | 130 |
+| generation seconds | 232.9374 | 12.1940 | -220.7433 [-220.7976, -220.6879]* | 130 |
+
+By prompt source:
+
+| method | source | CLIP x100 | subject consistency | motion smoothness | dynamic degree | imaging quality | aesthetic quality |
+|---|---|---|---|---|---|---|---|
+| M1 | hard | 32.3579 | 0.9390 | 0.9823 | 0.8333 | 0.6735 | 0.5451 |
+| M1 | vbench | 31.2341 | 0.9495 | 0.9765 | 0.8400 | 0.6530 | 0.5679 |
+| M2 | hard | 32.7544 | 0.9469 | 0.9855 | 0.7000 | 0.7075 | 0.5652 |
+| M2 | vbench | 30.8194 | 0.9628 | 0.9849 | 0.7200 | 0.6887 | 0.6195 |
+
+Equal budget: the teacher run with fewer UniPC steps against the distilled student with fewer steps, on the 30-prompt subset
+(figure `fig_m1_vs_m2_budget.png`):
+
+| method | steps | n | gen_s | aesthetic quality | imaging quality | dynamic degree | subject consistency | CLIP x100 |
+|---|---|---|---|---|---|---|---|---|
+| M1 | 4 | 30 | 26.772 | 0.390 | 0.391 | 0.700 | 0.909 | 27.631 |
+| M1 | 8 | 30 | 44.670 | 0.493 | 0.590 | 0.767 | 0.933 | 31.134 |
+| M1 | 16 | 30 | 80.533 | 0.518 | 0.628 | 0.800 | 0.938 | 32.204 |
+| M1 | 50 | 30 | 232.911 | 0.551 | 0.666 | 0.800 | 0.944 | 31.726 |
+| M2 | 1 | 30 | 7.946 | 0.471 | 0.639 | 0.467 | 0.882 | 30.733 |
+| M2 | 2 | 30 | 9.372 | 0.570 | 0.666 | 0.700 | 0.934 | 31.156 |
+| M2 | 3 | 30 | 10.781 | 0.580 | 0.661 | 0.700 | 0.936 | 30.934 |
+| M2 | 4 | 30 | 12.188 | 0.592 | 0.676 | 0.767 | 0.941 | 30.774 |
+
+Difference from M2 with 4 steps (its default) on the same prompts:
+
+| method | steps | aesthetic quality | imaging quality | dynamic degree | subject consistency | CLIP x100 |
+|---|---|---|---|---|---|---|
+| M1 | 4 | -0.202 [-0.237, -0.168]* | -0.284 [-0.338, -0.226]* | -0.067 [-0.233, +0.067] | -0.033 [-0.056, -0.008]* | -3.142 [-4.957, -1.315]* |
+| M1 | 8 | -0.099 [-0.131, -0.070]* | -0.086 [-0.122, -0.049]* | +0.000 [-0.167, +0.167] | -0.009 [-0.028, +0.013] | +0.360 [-0.853, +1.687] |
+| M1 | 16 | -0.074 [-0.107, -0.044]* | -0.048 [-0.083, -0.011]* | +0.033 [-0.167, +0.233] | -0.004 [-0.024, +0.018] | +1.431 [+0.185, +2.752]* |
+| M1 | 50 | -0.042 [-0.071, -0.013]* | -0.010 [-0.030, +0.013] | +0.033 [-0.100, +0.167] | +0.003 [-0.014, +0.022] | +0.953 [+0.063, +1.853]* |
+| M2 | 1 | -0.121 [-0.147, -0.097]* | -0.037 [-0.068, -0.003]* | -0.300 [-0.500, -0.100]* | -0.059 [-0.077, -0.042]* | -0.040 [-0.811, +0.740] |
+| M2 | 2 | -0.022 [-0.042, -0.003]* | -0.010 [-0.028, +0.009] | -0.067 [-0.233, +0.100] | -0.007 [-0.015, +0.001] | +0.382 [-0.061, +0.866] |
+| M2 | 3 | -0.012 [-0.020, -0.004]* | -0.014 [-0.027, -0.003]* | -0.067 [-0.200, +0.067] | -0.005 [-0.009, -0.002]* | +0.160 [-0.103, +0.441] |
+| M2 | 4 | reference | reference | reference | reference | reference |
+
+How to read this (interpretation, written by hand from the tables above):
+
+- **Speed.** M1 takes 232.9 s per 5 s clip (sd 0.31 s over 130 videos), M2 12.19 s: M2 is
+  **19.1x faster** at about the same peak memory (24.4 against 23.3 GiB).
+  M1 time is linear in steps: about 4.5 s per UniPC step (two network passes for CFG) plus about 9 s of fixed cost
+  (text encoding and VAE decoding); the 4/8/16/50-step times fit this within 0.1 s.
+- **Quality at full budget (130 prompts, paired).** Text alignment is the same (CLIP difference not significant). M2 scores
+  higher on aesthetic quality (+0.044) and imaging quality (+0.035) and slightly higher on subject consistency and motion
+  smoothness, but **M1 is clearly more dynamic** (dynamic degree 0.84 against 0.72, -0.12 for M2). Higher consistency and
+  smoothness go together with less motion, so those two gains should not be read as better temporal quality. Higher VBench
+  aesthetic and imaging scores for a DMD-distilled student than for its teacher are plausible (distribution matching tends to
+  favour sharp, high-contrast, mode-like samples), but VBench is not a human judgement and we ran no user study.
+- **Is distillation needed, or would fewer teacher steps do? It is needed.** M1 with 4 steps (26.8 s, still 2.2x slower than
+  M2 because of CFG and full-clip attention) scores far lower (and was a blur in the example we inspected): aesthetic -0.20, imaging -0.28, CLIP -3.1 against M2 with
+  4 steps. With 8 steps (44.7 s, 3.7x M2's time) M1 is still clearly worse on aesthetic and imaging quality; with 16 steps
+  (80.5 s, 6.6x) it gains CLIP (+1.4) but still loses aesthetic (-0.07) and imaging (-0.05) quality. No M1 setting we ran
+  matches M2 at M2's cost; even M2 at 2 steps (9.4 s) beats M1 at 16 steps on aesthetic and imaging quality (though not on
+  dynamic degree or CLIP).
+- **Caveats.** One seed. The 30-prompt subset slightly favours M1 on CLIP (+0.95, significant there) while all 130 prompts show
+  no difference, so subset-level CLIP differences of about one point are within prompt-selection noise (see 4.5).
+
 
 ## 5. How to read these numbers
 
